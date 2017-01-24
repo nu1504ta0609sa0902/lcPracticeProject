@@ -1,0 +1,47 @@
+Add latest framework changes to top :
+31/03/2015:
+	- Fixed classpath issue 
+	- Now we can run individual scenarios directly from eclipse
+
+15/12/2014:
+	- Renamed NAN to BaseFramework as it was confusing people
+	- Renamed NANUtils to ConfigUtils
+	- Added ConfigFileName.java to prevent confusion
+
+21/11/2014
+
+	Added code to run specific tag from teamcity
+	mvn test -Dtest=CucumberTestSuite -Dtags=@teamcity
+	
+	Added method to get specific section urls
+		- Examples:
+			env.section.url.planajourney=plan-a-journey/
+			env.section.url.lez=some/partial/url/
+			env.section.url.complaint=some/partial/url/
+04/11/2014
+
+	Framework expects these variables to be setup in our CI (Team City) environment
+	System.getenv("TARGET_API_END_POINT");		//Api url : http://api.prod3.live.tfl.gov.uk/ etc
+	System.getenv("TARGET_WEB_END_POINT");		//Full url for your environment http://api.prod3.live.tfl.gov.uk/
+	System.getenv("TARGET_TEST_BROWSER");		//ff, firefox, gc, chrome,ie, internetexplorer
+	System.getenv("GENERATE_PRETTY_REPORTS");	//yes/no
+	System.getenv("TARGET_WEB_END_POINT_NAME");	//Short name for your environment : amber, live, red etc
+
+20/10/2014
+Team City config should take precedence over local properties
+Added team city properties which can easily control:
+	a. report generation
+	b. which env to run test on 
+
+29/08/2014
+Added getAPIEndPoint() to NANUtils, just incase our tests depend on some api calls
+Added gotoUrl() to directly go to specific url
+
+22/08/2014
+Added ListAllMySteps.java class to help with quickly identifying 
+steps we have written
+
+19/08/2014
+Integrated auto generation of pretty reports
+Controlled by : 
+	report.generate.pretty.report=yes

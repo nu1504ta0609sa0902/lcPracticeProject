@@ -1,0 +1,188 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8886909299,
+              "status": "passed"
+            },
+            "match": {
+              "location": "JourneyPlannerSteps.initialise()"
+            }
+          },
+          {
+            "result": {
+              "duration": 19713103,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSteps.logScenarioNames(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "If I do not enter From and To stations I should be shown error messages",
+        "description": "",
+        "id": "check-basic-functionality-of-journey-planner-is-working;if-i-do-not-enter-from-and-to-stations-i-should-be-shown-error-messages",
+        "after": [
+          {
+            "result": {
+              "duration": 466398,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSteps.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 859717625,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Plan A Journey page",
+            "match": {
+              "location": "JourneyPlannerSteps.i_am_on_Plan_A_Journey_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 360003096,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I directly click on Plan A Journey button",
+            "match": {
+              "location": "JourneyPlannerSteps.i_directly_click_on_Plan_A_Journey_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 227470784,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see both From and Tos error messages",
+            "match": {
+              "location": "JourneyPlannerSteps.i_should_see_both_From_and_Tos_error_messages()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 9,
+            "value": "#Search for a journey"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 1716869049,
+              "status": "passed"
+            },
+            "match": {
+              "location": "JourneyPlannerSteps.initialise()"
+            }
+          },
+          {
+            "result": {
+              "duration": 730595,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSteps.logScenarioNames(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "If I enter valid From and To stations than I should be taken to results page",
+        "description": "",
+        "id": "check-basic-functionality-of-journey-planner-is-working;if-i-enter-valid-from-and-to-stations-than-i-should-be-taken-to-results-page",
+        "after": [
+          {
+            "result": {
+              "duration": 554328,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSteps.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 578098921,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on Plan A Journey page",
+            "match": {
+              "location": "JourneyPlannerSteps.i_am_on_Plan_A_Journey_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3114884165,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter From \"St. James\u0027s Park Underground Station\" and To \"Waterloo Underground Station\" and click on Plan A Journey button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "St. James\u0027s Park Underground Station",
+                  "offset": 14
+                },
+                {
+                  "val": "Waterloo Underground Station",
+                  "offset": 60
+                }
+              ],
+              "location": "JourneyPlannerSteps.i_enter_From_and_To_and_click_on_Plan_A_Journey_button(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2123451943,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should see the journey planner results page",
+            "match": {
+              "location": "JourneyPlannerSteps.i_should_see_the_journey_planner_results_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check basic functionality of journey planner is working",
+    "description": "",
+    "id": "check-basic-functionality-of-journey-planner-is-working",
+    "keyword": "Feature",
+    "uri": "basic/journey_planner.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@gogo"
+      }
+    ]
+  }
+]
