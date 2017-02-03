@@ -1,7 +1,6 @@
 package com.learn.practice.cucumber.suite;
 
-import com.learn.practice.cucumber.runner.RunJourneyPlannerFeature;
-import com.learn.practice.cucumber.runner.RunJourneyPlannerFeatures;
+import com.learn.practice.cucumber.runner.RunAllPracticeDeviceTests;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
@@ -12,7 +11,7 @@ import org.junit.runners.Suite.SuiteClasses;
  *
  */
 @RunWith(Suite.class)
-@SuiteClasses({RunJourneyPlannerFeature.class, RunJourneyPlannerFeatures.class})	//Run single feature
+@SuiteClasses({RunAllPracticeDeviceTests.class})	//Run single feature
 public class CucumberNANTestSuite {
 
 }

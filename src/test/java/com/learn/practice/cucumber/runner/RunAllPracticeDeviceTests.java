@@ -13,11 +13,11 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(format = {"pretty", "html:target/cucumber-html-report", "json:target/report_example.json"}, 
-		glue = { "com.tfl.test.steps" },
-		features = { "classpath:basic/" }
+		glue = { "com.learn.practice.cucumber" },
+		features = { "classpath:devices/" }
 		,monochrome=true
 )
-public class RunJourneyPlannerFeature {
+public class RunAllPracticeDeviceTests {
 	//This is just a runner
 	
 }

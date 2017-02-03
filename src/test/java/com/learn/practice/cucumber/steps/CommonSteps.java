@@ -4,8 +4,6 @@ package com.learn.practice.cucumber.steps;
 import com.learn.practice.cucumber.manager.WebDriverManager;
 import com.learn.practice.cucumber.pageobjects.LoginPage;
 import com.learn.practice.cucumber.pageobjects.MainNavigationBar;
-import com.learn.practice.cucumber.pages.jp.JourneyPlannerResultsPage;
-import com.learn.practice.cucumber.pages.jp.PlanAJourneyPage;
 import com.learn.practice.cucumber.utils.config.ConfigUtils;
 import com.learn.practice.cucumber.utils.prettyreport.CreatePrettyReport;
 import org.openqa.selenium.WebDriver;
@@ -53,10 +51,10 @@ public class CommonSteps {
 			driver.manage().window().maximize();
 			
 			//generate pretty report on the go
-			generatePrettyReportOnTheGo();
+			//generatePrettyReportOnTheGo();
 			
 			//set hook to shut down driver
-			addShutdownHook();
+			//addShutdownHook();
 		}
 	}
 
