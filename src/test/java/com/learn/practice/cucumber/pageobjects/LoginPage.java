@@ -1,6 +1,6 @@
 package com.learn.practice.cucumber.pageobjects;
 
-import com.learn.practice.cucumber.utils.waits.WaitUtils;
+import com.learn.practice.cucumber.utils.selenium.waits.WaitUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -1,4 +1,4 @@
-package com.learn.practice.cucumber.utils.waits;
+package com.learn.practice.cucumber.utils.selenium.waits;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
