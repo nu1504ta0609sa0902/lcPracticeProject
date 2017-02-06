@@ -12,6 +12,6 @@ import org.junit.runners.Suite.SuiteClasses;
  */
 @RunWith(Suite.class)
 @SuiteClasses({RunAllPracticeDeviceTests.class})	//Run single feature
-public class CucumberNANTestSuite {
+public class RunAllTestSuite {
 
 }
