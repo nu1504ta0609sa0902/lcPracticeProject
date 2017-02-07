@@ -13,6 +13,10 @@ Install Cucumber Editor :
 	3. Or use Ruby Mine
 	
 test_nan.properties:
+    -ea -Dspring.profiles.active=mhratest -Dcurrent.browser=gc -Dgenerate.report=false
+
+    OR via properties file :
+
 	1. Change Environment by changing : env.current=tst02
 	3. Which browser to test on : env.driver.browser=firefox
 	
