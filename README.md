@@ -3,6 +3,8 @@ DON'T:
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		Use : WebDriverWait() where possible
+
+Running from command prompt EXAMPLE:
 		mvn test -Dtest=YOURTESTSUITE
 		OR
 		mvn test -Dcucumber.options="--format json-pretty --glue classpath:cucumber/examples/java/helloworld src/test/resources"
