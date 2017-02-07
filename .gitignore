@@ -17,3 +17,4 @@ buAllClear/*
 *.log
 /src/test/resources/screenshots
 libs/*
+*.iml
