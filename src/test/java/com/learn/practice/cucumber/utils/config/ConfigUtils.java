@@ -2,8 +2,6 @@ package com.learn.practice.cucumber.utils.config;
 
 
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
