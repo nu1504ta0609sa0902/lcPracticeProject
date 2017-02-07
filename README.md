@@ -2,20 +2,20 @@ DON'T:
 	1. Don't Use Implicit waits like : 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		Use : SlowLoadableComponents OR WebDriverWait() where possible
-		mvn test -Dtest=CucumberTestSuite
+		Use : WebDriverWait() where possible
+		mvn test -Dtest=YOURTESTSUITE
 		OR
 		mvn test -Dcucumber.options="--format json-pretty --glue classpath:cucumber/examples/java/helloworld src/test/resources"
 
-Install Cucumber Editor : 
+Install Cucumber Editor : if using eclipse
 	1. Eclipse : https://raw.github.com/matthewpietal/Eclipse-Plugin-for-Cucumber/master/info.cukes.editor.ide.site_4.x/
 	2. Or something similiar
-	3. Or use Ruby Mine
+	3. Or use Ruby Mine, IntelliJ etc
 	
-test_nan.properties:
+Setting profiles and other properties:
     -ea -Dspring.profiles.active=mhratest -Dcurrent.browser=gc -Dgenerate.report=false
 
-    OR via properties file :
+    OR via properties file : test_nan.properties
 
 	1. Change Environment by changing : env.current=tst02
 	3. Which browser to test on : env.driver.browser=firefox
